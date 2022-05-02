@@ -10,7 +10,7 @@ AppDataSource.initialize()
     .then(() => {
         const orderRepository = AppDataSource.getRepository(Order)
 
-        amqp.connect('amqps://khirervi:T5aoxBG8l0hhHlXU9Z1Xjmicra4UFzCg@rattlesnake.rmq.cloudamqp.com/khirervi', (error0, connection)=>{
+        amqp.connect('', (error0, connection)=>{
             if(error0){
                 throw error0;
             }
